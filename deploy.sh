@@ -4,7 +4,7 @@
 set -e
 
 git stash
-gco gh-pages
+git checkout gh-pages
 
 # build
 yarn docs:build
@@ -22,4 +22,4 @@ git commit -m 'deploy'
 git push -f origin gh-pages
 
 cd -
-gco -
+git checkout -
